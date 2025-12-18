@@ -333,7 +333,7 @@ if page == "Project Details":
         p = Path(path)
         if p.exists():
             st.subheader(title)
-            st.image(str(p), use_container_width=True)
+            st.image(str(p), use_column_width=True)
         else:
             st.info(f"{title} — figure not found at `{path}` (generate via training/evaluation scripts).")
 
